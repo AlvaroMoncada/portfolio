@@ -5,7 +5,7 @@ import { site } from '@/lib/site'
 
 const channels = [
   {
-    label: 'Email',
+    label: 'Correo',
     value: site.email,
     href: `mailto:${site.email}`,
     icon: Mail,
@@ -13,14 +13,14 @@ const channels = [
   },
   {
     label: 'GitHub',
-    value: 'View repositories',
+    value: 'Ver repositorios',
     href: site.github,
     icon: GithubIcon,
     external: true,
   },
   {
     label: 'LinkedIn',
-    value: 'Connect professionally',
+    value: 'Conectemos profesionalmente',
     href: site.linkedin,
     icon: LinkedinIcon,
     external: true,
@@ -35,9 +35,9 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
         <SectionHeading
           id="contact-heading"
-          index="03. contact"
-          title="Let's build something secure"
-          description="Open to full-time roles, freelance projects, and security-focused collaborations. The fastest way to reach me is by email."
+          index="03. contacto"
+          title="Construyamos algo seguro"
+          description="Abierto a puestos a tiempo completo, proyectos freelance y colaboraciones centradas en seguridad. La forma más rápida de contactarme es por correo."
         />
 
         <ul className="grid gap-4 md:grid-cols-3">
@@ -72,9 +72,9 @@ export function Contact() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-xs text-muted-foreground sm:flex-row sm:px-6">
-          <p>{`© ${year} ${site.name}. All rights reserved.`}</p>
+          <p>{`© ${year} ${site.name}. Todos los derechos reservados.`}</p>
           <p className="font-mono">
-            <span className="text-accent">{'>'}</span> secure by design
+            <span className="text-accent">{'>'}</span> seguro por diseño
           </p>
         </div>
       </div>

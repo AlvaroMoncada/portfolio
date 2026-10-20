@@ -3,9 +3,9 @@ import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { site } from '@/lib/site'
 
 const links = [
-  { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#projects', label: 'Proyectos' },
+  { href: '#skills', label: 'Habilidades' },
+  { href: '#contact', label: 'Contacto' },
 ]
 
 const iconLinkClass =
@@ -15,7 +15,7 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-background/70 backdrop-blur-xl">
       <nav
-        aria-label="Main"
+        aria-label="Principal"
         className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
       >
         <a href="#top" className="flex items-center gap-2.5 font-medium">
@@ -41,15 +41,15 @@ export function SiteNav() {
         <div className="flex items-center gap-1">
           <a href={site.github} target="_blank" rel="noopener noreferrer" className={iconLinkClass}>
             <GithubIcon className="size-4" />
-            <span className="sr-only">GitHub profile</span>
+            <span className="sr-only">Perfil de GitHub</span>
           </a>
           <a href={site.linkedin} target="_blank" rel="noopener noreferrer" className={iconLinkClass}>
             <LinkedinIcon className="size-4" />
-            <span className="sr-only">LinkedIn profile</span>
+            <span className="sr-only">Perfil de LinkedIn</span>
           </a>
           <a href={`mailto:${site.email}`} className={iconLinkClass}>
             <Mail className="size-4" aria-hidden="true" />
-            <span className="sr-only">Send an email</span>
+            <span className="sr-only">Enviar un correo</span>
           </a>
         </div>
       </nav>

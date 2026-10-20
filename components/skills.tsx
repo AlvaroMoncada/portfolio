@@ -16,23 +16,23 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
         <SectionHeading
           id="skills-heading"
-          index="02. skills"
-          title="Technical Skills"
-          description="A dual focus on shipping modern web products and protecting them against real-world threats."
+          index="02. habilidades"
+          title="Habilidades técnicas"
+          description="Un doble enfoque: crear productos web modernos y protegerlos frente a amenazas reales."
         />
 
         <div className="grid gap-6 lg:grid-cols-2">
           <SkillPanel
-            title="Web Development"
-            subtitle="Frontend & Backend"
+            title="Desarrollo Web"
+            subtitle="Frontend y Backend"
             icon={<Code2 className="size-5 text-primary" aria-hidden="true" />}
             tone="blue"
             skills={webSkills}
             tools={webTools}
           />
           <SkillPanel
-            title="Cybersecurity & Risk Mitigation"
-            subtitle="Defense & Analysis"
+            title="Ciberseguridad y Mitigación de Riesgos"
+            subtitle="Defensa y Análisis"
             icon={<ShieldHalf className="size-5 text-accent" aria-hidden="true" />}
             tone="green"
             skills={securitySkills}
@@ -103,7 +103,7 @@ function SkillPanel({
 
       <div className="mt-8 border-t border-white/10 pt-6">
         <p className="mb-3 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-          Tools &amp; Frameworks
+          Herramientas y Frameworks
         </p>
         <ul className="flex flex-wrap gap-2">
           {tools.map((tool) => (

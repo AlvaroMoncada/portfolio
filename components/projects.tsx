@@ -23,9 +23,9 @@ export function Projects() {
     >
       <SectionHeading
         id="projects-heading"
-        index="01. projects"
-        title="Deployed Work"
-        description="Production web applications built end-to-end, from interface design to secure deployment."
+        index="01. proyectos"
+        title="Proyectos desplegados"
+        description="Aplicaciones web en producción desarrolladas de principio a fin, desde el diseño de la interfaz hasta el despliegue seguro."
       />
 
       <div className="grid gap-6 md:grid-cols-2">
@@ -37,7 +37,7 @@ export function Projects() {
             <div className="relative aspect-video overflow-hidden border-b border-white/10 bg-muted">
               <Image
                 src={project.image}
-                alt={`Screenshot of ${project.title}`}
+                alt={`Captura de pantalla de ${project.title}`}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -54,7 +54,7 @@ export function Projects() {
               <CardDescription className="mt-1 leading-relaxed">{project.description}</CardDescription>
             </CardHeader>
             <CardContent className="pt-4 pb-6">
-              <ul className="flex flex-wrap gap-2" aria-label="Technologies used">
+              <ul className="flex flex-wrap gap-2" aria-label="Tecnologías utilizadas">
                 {project.tags.map((tag) => (
                   <li key={tag}>
                     <Badge
@@ -74,9 +74,9 @@ export function Projects() {
                 rel="noopener noreferrer"
                 className={cn(buttonVariants({ size: 'sm' }), 'h-8 px-3 hover:bg-primary/90')}
               >
-                Live Deployment
+                Ver en vivo
                 <ExternalLink data-icon="inline-end" aria-hidden="true" />
-                <span className="sr-only">{`of ${project.title} (opens in new tab)`}</span>
+                <span className="sr-only">{`: ${project.title} (se abre en una nueva pestaña)`}</span>
               </a>
             </CardFooter>
           </Card>

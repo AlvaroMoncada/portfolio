@@ -1,7 +1,7 @@
 export const site = {
   name: 'Alex Rivera',
   initials: 'AR',
-  role: 'Web Developer & Security Specialist',
+  role: 'Desarrollador Web y Especialista en Seguridad',
   email: 'hello@alexrivera.dev',
   github: 'https://github.com/',
   linkedin: 'https://www.linkedin.com/',
@@ -11,40 +11,40 @@ export const projects = [
   {
     title: 'Sentinel Dashboard',
     description:
-      'A real-time security monitoring dashboard that aggregates threat feeds, tracks uptime, and surfaces anomalous login activity with role-based access control.',
+      'Panel de monitorización de seguridad en tiempo real que agrega fuentes de amenazas, controla la disponibilidad y detecta inicios de sesión anómalos con control de acceso basado en roles.',
     image: '/projects/sentinel.png',
     tags: ['Next.js', 'TypeScript', 'Tailwind', 'PostgreSQL'],
     href: 'https://vercel.com/',
-    status: 'Production',
+    status: 'En producción',
   },
   {
     title: 'TaskFlow',
     description:
-      'A collaborative project management app with kanban boards, secure session-based authentication, and input validation hardened against OWASP Top 10 risks.',
+      'Aplicación colaborativa de gestión de proyectos con tableros kanban, autenticación segura basada en sesiones y validación de entradas reforzada frente a los riesgos del OWASP Top 10.',
     image: '/projects/taskflow.png',
-    tags: ['React', 'Node.js', 'Tailwind', 'REST API'],
+    tags: ['React', 'Node.js', 'Tailwind', 'API REST'],
     href: 'https://vercel.com/',
-    status: 'Production',
+    status: 'En producción',
   },
 ]
 
 export const webSkills = [
-  { name: 'HTML, CSS & JavaScript', level: 95 },
-  { name: 'React & Next.js', level: 90 },
+  { name: 'HTML, CSS y JavaScript', level: 95 },
+  { name: 'React y Next.js', level: 90 },
   { name: 'TypeScript', level: 85 },
   { name: 'Tailwind CSS', level: 92 },
-  { name: 'Node.js & REST APIs', level: 80 },
-  { name: 'SQL & Database Design', level: 78 },
+  { name: 'Node.js y APIs REST', level: 80 },
+  { name: 'SQL y diseño de bases de datos', level: 78 },
 ]
 
 export const securitySkills = [
-  { name: 'Risk Assessment & Mitigation', level: 85 },
-  { name: 'OWASP Top 10 & Secure Coding', level: 88 },
-  { name: 'SIEM Tools & Log Analysis', level: 75 },
-  { name: 'Network Security & Protocols', level: 78 },
-  { name: 'Linux & Bash Scripting', level: 82 },
-  { name: 'Python for Security Automation', level: 76 },
+  { name: 'Evaluación y mitigación de riesgos', level: 85 },
+  { name: 'OWASP Top 10 y programación segura', level: 88 },
+  { name: 'Herramientas SIEM y análisis de logs', level: 75 },
+  { name: 'Seguridad de redes y protocolos', level: 78 },
+  { name: 'Linux y scripting en Bash', level: 82 },
+  { name: 'Python para automatización de seguridad', level: 76 },
 ]
 
 export const webTools = ['Git', 'Docker', 'Vercel', 'PHP', 'Java', 'MySQL']
-export const securityTools = ['Wireshark', 'Splunk', 'Nmap', 'tcpdump', 'NIST CSF', 'Incident Response']
+export const securityTools = ['Wireshark', 'Splunk', 'Nmap', 'tcpdump', 'NIST CSF', 'Respuesta a incidentes']

@@ -20,22 +20,21 @@ export function Hero() {
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
             <span className="relative inline-flex size-2 rounded-full bg-accent" />
           </span>
-          Available for new opportunities
+          Disponible para nuevas oportunidades
         </div>
 
         <h1 className="max-w-4xl text-balance text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          Web Developer &amp;{' '}
+          Desarrollador Web y Especialista en{' '}
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Digital Security
-          </span>{' '}
-          Specialist
+            Seguridad Digital
+          </span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
-          Building fast, accessible web applications with security designed in from day one.
-          Holder of a{' '}
+          Creo aplicaciones web rápidas y accesibles, con la seguridad integrada desde el primer día.
+          Titulado en{' '}
           <span className="text-foreground">
-            Higher Degree in Web Application Development (DAW)
+            Técnico Superior en Desarrollo de Aplicaciones Web (DAW)
           </span>
           .
         </p>
@@ -45,7 +44,7 @@ export function Hero() {
             href="#projects"
             className={cn(buttonVariants({ size: 'lg' }), 'h-11 px-5 hover:bg-primary/90')}
           >
-            View Work
+            Ver proyectos
             <ArrowRight data-icon="inline-end" aria-hidden="true" />
           </a>
           <a
@@ -55,7 +54,7 @@ export function Hero() {
               'h-11 border-white/15 bg-white/[0.02] px-5',
             )}
           >
-            Contact Me
+            Contáctame
           </a>
         </div>
 
@@ -63,21 +62,21 @@ export function Hero() {
           <CredentialCard
             icon={<ShieldCheck className="size-5 text-accent" aria-hidden="true" />}
             iconClass="border-accent/30 bg-accent/10"
-            eyebrow="Certified"
-            title="Google Cybersecurity Certificate"
+            eyebrow="Certificación"
+            title="Certificado de Ciberseguridad de Google"
             meta={
               <span className="inline-flex items-center gap-1 font-mono text-[11px] text-accent">
                 <Award className="size-3" aria-hidden="true" />
-                VERIFIED
+                VERIFICADO
               </span>
             }
           />
           <CredentialCard
             icon={<GraduationCap className="size-5 text-primary" aria-hidden="true" />}
             iconClass="border-primary/30 bg-primary/10"
-            eyebrow="Higher Degree"
-            title="Web Application Development (DAW)"
-            meta={<span className="font-mono text-[11px] text-primary">DEGREE</span>}
+            eyebrow="Grado Superior"
+            title="Desarrollo de Aplicaciones Web (DAW)"
+            meta={<span className="font-mono text-[11px] text-primary">TÍTULO</span>}
           />
         </div>
       </div>

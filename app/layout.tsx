@@ -7,9 +7,9 @@ const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'Web Developer & Digital Security Specialist | Portfolio',
+  title: 'Desarrollador Web y Especialista en Seguridad Digital | Portafolio',
   description:
-    'Portfolio of a Web Developer and Cybersecurity Specialist with a Higher Degree in Web Application Development (DAW) and the Google Cybersecurity Certificate.',
+    'Portafolio de un Desarrollador Web y Especialista en Ciberseguridad, Técnico Superior en Desarrollo de Aplicaciones Web (DAW) y con el Certificado de Ciberseguridad de Google.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="es" className={`dark ${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

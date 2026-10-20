@@ -1,7 +1,14 @@
-import { Code2, ShieldHalf } from 'lucide-react'
+import { Code2, ShieldHalf, Sparkles } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { SectionHeading } from '@/components/section-heading'
-import { securitySkills, securityTools, webSkills, webTools } from '@/lib/site'
+import {
+  aiSkills,
+  aiTools,
+  securitySkills,
+  securityTools,
+  webSkills,
+  webTools,
+} from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 type Skill = { name: string; level: number }
@@ -38,6 +45,16 @@ export function Skills() {
             skills={securitySkills}
             tools={securityTools}
           />
+          <SkillPanel
+            className="lg:col-span-2"
+            title="Desarrollo Web con IA"
+            subtitle="Flujos de trabajo asistidos por inteligencia artificial"
+            icon={<Sparkles className="size-5 text-primary" aria-hidden="true" />}
+            tone="blue"
+            skills={aiSkills}
+            tools={aiTools}
+            toolsLabel="Herramientas de IA"
+          />
         </div>
       </div>
     </section>
@@ -51,6 +68,8 @@ function SkillPanel({
   tone,
   skills,
   tools,
+  toolsLabel = 'Herramientas y Frameworks',
+  className,
 }: {
   title: string
   subtitle: string
@@ -58,10 +77,17 @@ function SkillPanel({
   tone: 'blue' | 'green'
   skills: Skill[]
   tools: string[]
+  toolsLabel?: string
+  className?: string
 }) {
   const isBlue = tone === 'blue'
   return (
-    <div className="rounded-xl border border-white/10 bg-background/60 p-6 backdrop-blur md:p-8">
+    <div
+      className={cn(
+        'rounded-xl border border-white/10 bg-background/60 p-6 backdrop-blur md:p-8',
+        className,
+      )}
+    >
       <div className="flex items-center gap-3">
         <div
           className={cn(
@@ -103,7 +129,7 @@ function SkillPanel({
 
       <div className="mt-8 border-t border-white/10 pt-6">
         <p className="mb-3 font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-          Herramientas y Frameworks
+          {toolsLabel}
         </p>
         <ul className="flex flex-wrap gap-2">
           {tools.map((tool) => (

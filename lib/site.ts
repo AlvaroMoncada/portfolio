@@ -1,8 +1,8 @@
 export const site = {
-  name: 'Alex Rivera',
-  initials: 'AR',
+  name: 'Alvaro Moncada',
+  initials: 'AM',
   role: 'Desarrollador Web y Especialista en Seguridad',
-  email: 'hello@alexrivera.dev',
+  email: 'alvaromelli79@gmail.com',
   github: 'https://github.com/',
   linkedin: 'https://www.linkedin.com/',
 }

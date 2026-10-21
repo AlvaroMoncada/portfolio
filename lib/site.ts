@@ -9,21 +9,21 @@ export const site = {
 
 export const projects = [
   {
-    title: 'Sentinel Dashboard',
+    title: 'Residencia',
     description:
-      'Panel de monitorización de seguridad en tiempo real que agrega fuentes de amenazas, controla la disponibilidad y detecta inicios de sesión anómalos con control de acceso basado en roles.',
-    image: '/projects/sentinel.png',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'PostgreSQL'],
-    href: 'https://vercel.com/',
+      'Aplicación web moderna desarrollada con Angular 21 y soporte para Server-Side Rendering (SSR) , orientada a ofrecer información completa, servicios y asistencia. Para una residencia de ancianos',
+    image: '/projects/lapazdelamerced.png',
+    tags: ['Angular', 'TypeScript', 'Tailwind'],
+    href: 'https://lapazdelamerced.es',
     status: 'En producción',
   },
   {
-    title: 'TaskFlow',
+    title: 'misVentas',
     description:
-      'Aplicación colaborativa de gestión de proyectos con tableros kanban, autenticación segura basada en sesiones y validación de entradas reforzada frente a los riesgos del OWASP Top 10.',
-    image: '/projects/taskflow.png',
-    tags: ['React', 'Node.js', 'Tailwind', 'API REST'],
-    href: 'https://vercel.com/',
+      'misVentas es una aplicación web integral para la gestión y control de clientes, ventas y comisiones , diseñada para ofrecer una experiencia fluida, reactiva y moderna tanto para el equipo comercial como para la administración.',
+    image: '/projects/misventas.png',
+    tags: ['Vue 3', 'JavaScript', 'Tailwind CSS', 'Inertia.js'],
+    href: 'https://misventas.es',
     status: 'En producción',
   },
 ]

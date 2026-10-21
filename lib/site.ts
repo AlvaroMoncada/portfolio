@@ -3,8 +3,10 @@ export const site = {
   initials: 'AM',
   role: 'Desarrollador Web y Especialista en Seguridad',
   email: 'alvaromelli79@gmail.com',
-  github: 'https://github.com/',
-  linkedin: 'https://www.linkedin.com/',
+  github: 'https://github.com/AlvaroMoncada/',
+  linkedin: 'https://linkedin.com/in/alvaro-moncada-86300535b/',
+  googleCyberCert:
+    'https://www.coursera.org/account/accomplishments/specialization/3D8D96ZRI9BB',
 }
 
 export const projects = [
@@ -14,7 +16,7 @@ export const projects = [
       'Aplicación web moderna desarrollada con Angular 21 y soporte para Server-Side Rendering (SSR) , orientada a ofrecer información completa, servicios y asistencia. Para una residencia de ancianos',
     image: '/projects/lapazdelamerced.png',
     tags: ['Angular', 'TypeScript', 'Tailwind'],
-    href: 'https://lapazdelamerced.es',
+    href: 'https://lapazdelamerced.es/',
     status: 'En producción',
   },
   {
@@ -23,7 +25,7 @@ export const projects = [
       'misVentas es una aplicación web integral para la gestión y control de clientes, ventas y comisiones , diseñada para ofrecer una experiencia fluida, reactiva y moderna tanto para el equipo comercial como para la administración.',
     image: '/projects/misventas.png',
     tags: ['Vue 3', 'JavaScript', 'Tailwind CSS', 'Inertia.js'],
-    href: 'https://misventas.es',
+    href: 'https://misventas.es/',
     status: 'En producción',
   },
 ]

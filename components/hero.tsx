@@ -1,5 +1,6 @@
-import { ArrowRight, Award, GraduationCap, ShieldCheck } from 'lucide-react'
+import { ArrowRight, Award, ExternalLink, GraduationCap, ShieldCheck } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { site } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 export function Hero() {
@@ -64,6 +65,7 @@ export function Hero() {
             iconClass="border-accent/30 bg-accent/10"
             eyebrow="Certificación"
             title="Certificado de Ciberseguridad de Google"
+            href={site.googleCyberCert}
             meta={
               <span className="inline-flex items-center gap-1 font-mono text-[11px] text-accent">
                 <Award className="size-3" aria-hidden="true" />
@@ -90,12 +92,14 @@ function CredentialCard({
   eyebrow,
   title,
   meta,
+  href,
 }: {
   icon: React.ReactNode
   iconClass: string
   eyebrow: string
   title: string
   meta: React.ReactNode
+  href?: string
 }) {
   return (
     <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-4 backdrop-blur">
@@ -108,6 +112,21 @@ function CredentialCard({
           {meta}
         </div>
         <p className="mt-0.5 truncate text-sm font-medium">{title}</p>
+        {href && (
+          <a
+            id="view-certificate-button"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ variant: 'outline', size: 'sm' }),
+              'mt-3 border-accent/30 bg-accent/10 text-accent hover:bg-accent/20 hover:text-accent',
+            )}
+          >
+            Ver certificado
+            <ExternalLink data-icon="inline-end" aria-hidden="true" />
+          </a>
+        )}
       </div>
     </div>
   )

@@ -23,7 +23,7 @@ export const projects = [
     title: 'misVentas',
     description:
       'misVentas es una aplicación web integral para la gestión y control de clientes, ventas y comisiones , diseñada para ofrecer una experiencia fluida, reactiva y moderna tanto para el equipo comercial como para la administración.',
-    image: '/projects/misventas.png',
+    image: '/projects/misVentas.png',
     tags: ['Vue 3', 'JavaScript', 'Tailwind CSS', 'Inertia.js'],
     href: 'https://misventas.es/',
     status: 'En producción',

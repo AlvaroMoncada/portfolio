@@ -4,7 +4,7 @@ export const site = {
   role: 'Desarrollador Web y Especialista en Seguridad',
   email: 'alvaromelli79@gmail.com',
   github: 'https://github.com/AlvaroMoncada/',
-  linkedin: 'https://linkedin.com/in/alvaro-moncada-86300535b/',
+  linkedin: 'https://linkedin.com/in/alvaro-moncada-martín/',
   googleCyberCert:
     'https://www.coursera.org/account/accomplishments/specialization/3D8D96ZRI9BB',
 }
